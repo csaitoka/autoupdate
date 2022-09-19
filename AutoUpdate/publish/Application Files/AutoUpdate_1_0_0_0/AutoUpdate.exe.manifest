@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="AutoUpdate.exe" version="1.0.0.0" publicKeyToken="ccf5a8d5eb8632da" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="AutoUpdate" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="AutoUpdate.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AutoUpdate.exe" size="8120">
+      <assemblyIdentity name="AutoUpdate" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>VTg0EujLULVj3NPEaSjuPxAXY1VGUN8uFOHttHT0Fxs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="AutoUpdate.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=JCPLC\csaitoka" issuerKeyHash="4daa4a092d46d4f5832972ed9b1bded3f673e4cb" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>mgCCU/n3oYVSWltkfTkYKnfsW4OpirNhrJFJA/Sit1I=</DigestValue></Reference></SignedInfo><SignatureValue>Od3Omz8Fo4E128gEuVm0gcIqzAShdUquNoK6I+ElK63yqAk275BA1XHM/PE/hTyFIxBnMVSOtziTrIbOUy2QaIZANBVDvE4bsy1Q2WrlzcahspAB+bqRo+S02odTcPrcw+JPbYdDTEZTCvg62dtK44JFsuJ1AN/ExzzFkXQN0vY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tGNQ0zSj+5aD3Ucbimc+kaRWjhrfWiFj+CoDIpRVkQhY2igZRnH5tigTWXFANtUZ9iL0GyN2dST0R4/kw6+/K/huJl8KVq+yKzWqntPpPE+NjcowKEj0hPkndBQnWIAbx8TVkMzG2+b5wNf/FawFV8VDaoKX6T3fQmeQAuRp4WE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="52b7a2f4034991ac61b38aa9835bec772a18397d645b5a5285a1f7f95382009a" Description="" Url=""><as:assemblyIdentity name="AutoUpdate.exe" version="1.0.0.0" publicKeyToken="ccf5a8d5eb8632da" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=JCPLC\csaitoka</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>22e20taKO3JrO061yEtF6C5BLs5swJegQtr50ZMfH6E=</DigestValue></Reference></SignedInfo><SignatureValue>l+Qu5IedhABFsFUQckatJ/lnvUCyIFtmpQF8pSOQCxxDsXuE6jzztioYI2pe9kahKkpqKgym5Klf3ANSkdDhmMzQV0iHqr/q3q7wam+w6dznkCdoWeSaDX6DwP2eNm70EyAccwyephX4eblLfQp5fYevSScvEwxHW4l1Qo+bCHI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tGNQ0zSj+5aD3Ucbimc+kaRWjhrfWiFj+CoDIpRVkQhY2igZRnH5tigTWXFANtUZ9iL0GyN2dST0R4/kw6+/K/huJl8KVq+yKzWqntPpPE+NjcowKEj0hPkndBQnWIAbx8TVkMzG2+b5wNf/FawFV8VDaoKX6T3fQmeQAuRp4WE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQQkmHGohFqY9MSs7nlu8G7DANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwASgBDAFAATABDAFwAYwBzAGEAaQB0AG8AawBhMB4XDTIyMDkxOTA4MTA0N1oXDTIzMDkxOTE0MTA0N1owJzElMCMGA1UEAx4cAEoAQwBQAEwAQwBcAGMAcwBhAGkAdABvAGsAYTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAtGNQ0zSj+5aD3Ucbimc+kaRWjhrfWiFj+CoDIpRVkQhY2igZRnH5tigTWXFANtUZ9iL0GyN2dST0R4/kw6+/K/huJl8KVq+yKzWqntPpPE+NjcowKEj0hPkndBQnWIAbx8TVkMzG2+b5wNf/FawFV8VDaoKX6T3fQmeQAuRp4WECAwEAATANBgkqhkiG9w0BAQsFAAOBgQBtIUu9SkCtvhdFEOgBMzEl/09w7MzLocTNx4SFJS44PbxN8XcpCPEp0g+HzFTI+eY+QgHSdRsk5J2FBoTcOfrmJxFpOqEUCnON4kxMreg7ypGP7IHtaDodQYXzX9xO2at/ShMjGSoL/JKFca6RQvf/3iKHz9v6czVMyPvHryZ2Tw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
